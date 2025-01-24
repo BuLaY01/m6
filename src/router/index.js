@@ -1,14 +1,45 @@
 import { createRouter, createWebHistory } from 'vue-router'
 //import HomeView from '../views/HomeView.vue'
+import Fantasy from '../views/Fantasy.vue'
+import Royal from '../views/Royal.vue'
+import Rpg from '../views/Rpg.vue'
+import Shooter from '../views/Shooter.vue'
+import Strategy from '../views/Strategy.vue'
+import Main from '../views/Main.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: HomeView,
-    // },
+    {
+      path: '/',
+      component: Main
+    },
+
+    {
+      path: '/fantasy',
+      component: Fantasy
+    },
+
+    {
+      path: '/royal',
+      component: Royal
+    },
+
+    {
+      path: '/rpg',
+      component: Rpg
+    },
+
+    {
+      path: '/shooter',
+      component: Shooter
+    },
+
+    {
+      path: '/strategy',
+      component: Strategy
+    },
+
     // {
     //   path: '/about',
     //   name: 'about',
