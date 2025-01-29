@@ -10,11 +10,7 @@ onMounted(async() => {
 
 <template>
   <section>
-    {{games[0]}}
-    <Cards />
-    <Cards />
-    <Cards />
-    <Cards />
+    <Cards v-for = "card in games" :key = "card.id" :card = "card"/>
   </section>
 </template>
 
